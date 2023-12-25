@@ -20,8 +20,8 @@ app.get("/", (req, res) => {
   res.send("Hello from Express");
 });
 
-app.use("/api", carRoutes);
-app.use("/api", userRoutes);
+app.use("/api/car", carRoutes);
+app.use("/api/auth", userRoutes);
 
 // free endpoint
 app.get("/free-endpoint", (request, response) => {
